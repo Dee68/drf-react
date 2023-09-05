@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['drf-react.herokuapp.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['drf-react-efd045f2d250.herokuapp.com', 'drf-react.herokuapp.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
