@@ -71,7 +71,7 @@ ROOT_URLCONF = 'olx.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],#os.path.join(BASE_DIR, 'olx-front/build')],
+        'DIRS': [os.path.join(BASE_DIR, 'olx-front/build')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -240,7 +240,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
     '/home/adonai/.pyenv/versions/3.8.11/envs/olxenv/lib/python3.8/site-packages/django/contrib/admin/static/admin/js'
-    #os.path.join(BASE_DIR, 'olx-front/build/static'),
+    os.path.join(BASE_DIR, 'olx-front/build/static'),
 
 ]
 
