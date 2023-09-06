@@ -239,7 +239,7 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
-    '/home/adonai/.pyenv/versions/3.8.11/envs/olxenv/lib/python3.8/site-packages/django/contrib/admin/static/admin/js'
+    #'/home/adonai/.pyenv/versions/3.8.11/envs/olxenv/lib/python3.8/site-packages/django/contrib/admin/static/admin/js'
     os.path.join(BASE_DIR, 'olx-front/build/static'),
 
 ]
