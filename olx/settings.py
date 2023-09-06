@@ -91,6 +91,7 @@ CORS_ALLOW_CREDENTIALS = True
 
 AUTH_USER_MODEL = 'account.User'
 
+
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.AllowAny'
@@ -238,6 +239,7 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
+    '/home/adonai/.pyenv/versions/3.8.11/envs/olxenv/lib/python3.8/site-packages/django/contrib/admin/static/admin/js'
     #os.path.join(BASE_DIR, 'olx-front/build/static'),
 
 ]
@@ -249,6 +251,7 @@ STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 # Default primary key field type
