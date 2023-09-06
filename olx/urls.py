@@ -84,8 +84,8 @@ urlpatterns = [
         UserWishListItems.as_view()
         ),
     path('api/remove-wishlist/', remove_from_list, name='remove-wishlist')
-] #+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + \
-    #static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + \
+    static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 #urlpatterns += [re_path(r'^.*', TemplateView.as_view(template_name='index.html'))]
 
