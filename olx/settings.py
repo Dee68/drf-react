@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['drf-react-efd045f2d250.herokuapp.com', 'drf-react.herokuapp.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['drf-react-efd045f2d250.herokuapp.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -238,13 +238,15 @@ LOGGING = {
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-    #'/home/adonai/.pyenv/versions/3.8.11/envs/olxenv/lib/python3.8/site-packages/django/contrib/admin/static/admin/js'
+    BASE_DIR / "static",
+    #'/home/adonai/.pyenv/versions/3.8.11/envs/olxenv/lib/python3.8/site-packages/django/contrib/admin/static/admin',
+    # '/home/adonai/.pyenv/versions/3.8.11/envs/olxenv/lib/python3.8/site-packages/django/contrib/admin/static/admin/css',
+
     os.path.join(BASE_DIR, 'olx-front/build/static'),
 
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 
